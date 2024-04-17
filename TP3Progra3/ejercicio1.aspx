@@ -12,6 +12,9 @@
         .auto-style2 {
             height: 33px;
         }
+        .auto-style3 {
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -31,22 +34,24 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="btnLocalidad" runat="server" Text="Guardar Localidad" />
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3" colspan="3"></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
+                  <td><strong>Usuarios</strong></td>
                     <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Nombre usuario:</td>
+                    <td>
+                        <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
