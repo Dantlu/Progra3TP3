@@ -44,7 +44,8 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                  <td><strong>Usuarios</strong></td>
+                  <td><strong>Usuarios<br />
+                      </strong></td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -55,13 +56,17 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>Contraseña:</td>
+                    <td>
+                        <asp:TextBox ID="txtContrasenia" runat="server"></asp:TextBox>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>Repetir contraseña:</td>
+                    <td>
+                        <asp:TextBox ID="txtReContrasenia" runat="server"></asp:TextBox>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
