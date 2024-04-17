@@ -70,13 +70,17 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>Correo electrónico:</td>
+                    <td>
+                        <asp:TextBox ID="txtCorreoElectronico" runat="server"></asp:TextBox>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>CP:</td>
+                    <td>
+                        <asp:TextBox ID="txtCp" runat="server"></asp:TextBox>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mega\\Desktop\\GitHub\\UTN\\UTN-TUSI\\UTN\\1Cuatrimestre\\Lab3-UTN-FRGP\\Programacion3TP2\\Progra3Ej3\\Progra3TP3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{84EA0738-8657-42A1-9CBE-20CE97476002}|TP3Progra3\\TP3Progra3.csproj|c:\\users\\mega\\desktop\\github\\utn\\utn-tusi\\utn\\1cuatrimestre\\lab3-utn-frgp\\programacion3tp2\\progra3ej3\\progra3tp3\\tp3progra3\\ejercicio1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{84EA0738-8657-42A1-9CBE-20CE97476002}|TP3Progra3\\TP3Progra3.csproj|solutionrelative:tp3progra3\\ejercicio1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ejercicio1.aspx",
+              "DocumentMoniker": "C:\\Users\\Mega\\Desktop\\GitHub\\UTN\\UTN-TUSI\\UTN\\1Cuatrimestre\\Lab3-UTN-FRGP\\Programacion3TP2\\Progra3Ej3\\Progra3TP3\\TP3Progra3\\ejercicio1.aspx",
+              "RelativeDocumentMoniker": "TP3Progra3\\ejercicio1.aspx",
+              "ToolTip": "C:\\Users\\Mega\\Desktop\\GitHub\\UTN\\UTN-TUSI\\UTN\\1Cuatrimestre\\Lab3-UTN-FRGP\\Programacion3TP2\\Progra3Ej3\\Progra3TP3\\TP3Progra3\\ejercicio1.aspx",
+              "RelativeToolTip": "TP3Progra3\\ejercicio1.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-17T18:21:47.031Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
