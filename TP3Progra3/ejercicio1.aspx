@@ -84,8 +84,9 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>&nbsp;<asp:Label runat="server" Text="Localidad:"></asp:Label></td>
+                    <td>
+                        <asp:DropDownList runat="server"></asp:DropDownList>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -97,7 +98,7 @@
                     <td>
                         <asp:Button ID="btnInicio" runat="server" Text="Ir a inicio.aspx" OnClick="btnInicio_Click" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td>&nbsp;<asp:Button runat="server" Text="Guardar usuario"></asp:Button></td>
                     <td>&nbsp;</td>
                 </tr>
             </table>
