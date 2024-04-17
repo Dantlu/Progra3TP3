@@ -91,7 +91,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <asp:Button ID="btnInicio" runat="server" Text="Ir a inicio.aspx" />
+                        <asp:Button ID="btnInicio" runat="server" Text="Ir a inicio.aspx" OnClick="btnInicio_Click" />
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

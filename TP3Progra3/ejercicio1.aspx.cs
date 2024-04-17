@@ -13,5 +13,10 @@ namespace TP3Progra3
         {
 
         }
+
+        protected void btnInicio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Inicio.aspx");
+        }
     }
 }
