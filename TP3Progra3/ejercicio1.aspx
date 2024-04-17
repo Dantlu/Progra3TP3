@@ -90,7 +90,9 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="btnInicio" runat="server" Text="Ir a inicio.aspx" />
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
