@@ -87,6 +87,24 @@ namespace TP3Progra3
         protected global::System.Web.UI.WebControls.TextBox txtCp;
 
         /// <summary>
+        /// txtLocalidades control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label txtLocalidades;
+
+        /// <summary>
+        /// DropdownListLocalidades control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropdownListLocalidades;
+
+        /// <summary>
         /// btnInicio control.
         /// </summary>
         /// <remarks>
@@ -94,5 +112,14 @@ namespace TP3Progra3
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnInicio;
+
+        /// <summary>
+        /// btnGuardarUsuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnGuardarUsuario;
     }
 }
