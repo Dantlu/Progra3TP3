@@ -49,7 +49,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;<asp:Label runat="server" Text="La localidad ingresada ya existe"
+                        ID="lblErrorLocalidad" Enabled="False" Visible="False">La localidad ingresada ya existe</asp:Label></td>
                     <td class="auto-style7">
                         <asp:Button ID="btnLocalidad" runat="server" Text="Guardar Localidad" OnClick="btnLocalidad_Click" ValidationGroup="grupo1" />
                     </td>

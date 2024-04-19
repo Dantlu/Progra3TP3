@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Services.Description;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -12,6 +13,7 @@ namespace TP3Progra3
         protected void Page_Load(object sender, EventArgs e)
         {
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+            lblErrorLocalidad.Visible = false;
         }
 
         protected void btnInicio_Click(object sender, EventArgs e)
@@ -24,13 +26,26 @@ namespace TP3Progra3
         }
 
         protected void btnLocalidad_Click(object sender, EventArgs e)
-        {
+        {           
             // Verificar si la validación es exitosa
             if (Page.IsValid)
             {
                 // Acciones a realizar si la validación es exitosa
                 // Por ejemplo, redireccionar a otra página, guardar datos, etc.
-                txtNombreLocalidad.Text = "";
+                string nuevaLocalidad = txtNombreLocalidad.Text.Trim();
+                if (!DropdownListLocalidades.Items.Cast<ListItem>().Any(item => 
+                item.Text.Equals(nuevaLocalidad, StringComparison.OrdinalIgnoreCase))){
+                    // La localidad no existe, agregarla al DropDownList
+                    DropdownListLocalidades.Items.Add(nuevaLocalidad); // Guardar la localidad en el dropdownlist
+                    txtNombreLocalidad.Text = ""; // Limpiar el campo de texto
+                }
+                else
+                {
+                    // La localidad ya existe, mostrar un mensaje de error
+                    // ClientScript.RegisterStartupScript(GetType(), "alert", "alert('La localidad ingresada ya existe.');", true);
+                    lblErrorLocalidad.Visible = true;
+                    txtNombreLocalidad.Text = ""; // Limpiar el campo de texto
+                }
             }
             else
             {
