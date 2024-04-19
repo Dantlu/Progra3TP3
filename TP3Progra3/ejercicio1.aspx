@@ -15,6 +15,20 @@
         .auto-style3 {
             height: 26px;
         }
+        .auto-style4 {
+            height: 33px;
+            width: 164px;
+        }
+        .auto-style5 {
+            width: 164px;
+        }
+        .auto-style6 {
+            height: 33px;
+            width: 167px;
+        }
+        .auto-style7 {
+            width: 167px;
+        }
     </style>
 </head>
 <body>
@@ -26,83 +40,89 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">Nombre de Localidad: </td>
-                    <td class="auto-style2">
+                    <td class="auto-style4">Nombre de Localidad: </td>
+                    <td class="auto-style6">
                         <asp:TextBox ID="txtNombreLocalidad" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:RequiredFieldValidator ID="rfvLocalidades" runat="server" ControlToValidate="txtNombreLocalidad" ErrorMessage="Ingrese localidad" ValidationGroup="grupo1">*</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>
-                        <asp:Button ID="btnLocalidad" runat="server" Text="Guardar Localidad" />
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style7">
+                        <asp:Button ID="btnLocalidad" runat="server" Text="Guardar Localidad" OnClick="btnLocalidad_Click" ValidationGroup="grupo1" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style3" colspan="3"></td>
+                    <td class="auto-style3" colspan="3">
+                        <asp:ValidationSummary ID="vsMensajesError" runat="server" ValidationGroup="grupo1" />
+                    </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                  <td><strong>Usuarios<br />
+                    <td class="auto-style5">&nbsp;</td>
+                  <td class="auto-style7"><strong>Usuarios<br />
                       </strong></td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>Nombre usuario:</td>
-                    <td>
+                    <td class="auto-style5">Nombre usuario:</td>
+                    <td class="auto-style7">
                         <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>Contraseña:</td>
-                    <td>
+                    <td class="auto-style5">Contraseña:</td>
+                    <td class="auto-style7">
                         <asp:TextBox ID="txtContrasenia" runat="server"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>Repetir contraseña:</td>
-                    <td>
+                    <td class="auto-style5">Repetir contraseña:</td>
+                    <td class="auto-style7">
                         <asp:TextBox ID="txtReContrasenia" runat="server"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>Correo electrónico:</td>
-                    <td>
+                    <td class="auto-style5">Correo electrónico:</td>
+                    <td class="auto-style7">
                         <asp:TextBox ID="txtCorreoElectronico" runat="server"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>CP:</td>
-                    <td>
+                    <td class="auto-style5">CP:</td>
+                    <td class="auto-style7">
                         <asp:TextBox ID="txtCp" runat="server"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><asp:Label ID="txtLocalidades" runat="server" Text="Localidades:"></asp:Label></td>
-                    <td>
+                    <td class="auto-style5"><asp:Label ID="txtLocalidades" runat="server" Text="Localidades:"></asp:Label></td>
+                    <td class="auto-style7">
                         <asp:DropDownList ID="DropdownListLocalidades" runat="server" Width="115px"></asp:DropDownList>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style7">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="auto-style5">
                         <asp:Button ID="btnInicio" runat="server" Text="Ir a inicio.aspx" OnClick="btnInicio_Click" />
                     </td>
-                    <td>&nbsp;<asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario"></asp:Button></td>
+                    <td class="auto-style7">&nbsp;<asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" OnClick="btnGuardarUsuario_Click"></asp:Button></td>
                     <td>&nbsp;</td>
                 </tr>
             </table>
         </div>
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>

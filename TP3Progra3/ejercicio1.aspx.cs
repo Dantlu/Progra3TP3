@@ -11,12 +11,33 @@ namespace TP3Progra3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
         }
 
         protected void btnInicio_Click(object sender, EventArgs e)
         {
             Response.Redirect("Inicio.aspx");
+        }
+
+        protected void btnGuardarUsuario_Click(object sender, EventArgs e)
+        {
+        }
+
+        protected void btnLocalidad_Click(object sender, EventArgs e)
+        {
+            // Verificar si la validación es exitosa
+            if (Page.IsValid)
+            {
+                // Acciones a realizar si la validación es exitosa
+                // Por ejemplo, redireccionar a otra página, guardar datos, etc.
+                txtNombreLocalidad.Text = "";
+            }
+            else
+            {
+                // Acciones a realizar si la validación falla
+                // Por ejemplo, mostrar un mensaje de error adicional
+            }
+
         }
     }
 }
