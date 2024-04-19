@@ -79,14 +79,20 @@
                     <td class="auto-style7">
                         <asp:TextBox ID="txtContrasenia" runat="server"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvClave" runat="server" ControlToValidate="txtContrasenia" ErrorMessage="El campo no pueder permanecer en blanco">*</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style5">Repetir contraseña:</td>
                     <td class="auto-style7">
-                        <asp:TextBox ID="txtReContrasenia" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtReContrasenia" runat="server" ValidationGroup="Grupo3"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:CompareValidator ID="cvClave" runat="server" ControlToCompare="txtContrasenia" ControlToValidate="txtReContrasenia" ErrorMessage="Las contraseñas son distintas">*</asp:CompareValidator>
+                        <br />
+                        <asp:RequiredFieldValidator ID="rfvReClave" runat="server" ControlToValidate="txtReContrasenia" ErrorMessage="El campo no pueder permanecer en blanco">*</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style5">Correo electrónico:</td>
@@ -109,7 +115,9 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:Label ID="lblMsjClave" runat="server"></asp:Label>
+                    </td>
                     <td class="auto-style7">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -123,7 +131,8 @@
             </table>
         </div>
         <p>
-            &nbsp;</p>
+            </p>
+        <asp:ValidationSummary ID="ValidationSummary" runat="server" />
     </form>
 </body>
 </html>

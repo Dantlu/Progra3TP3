@@ -87,6 +87,15 @@ namespace TP3Progra3
         protected global::System.Web.UI.WebControls.TextBox txtContrasenia;
 
         /// <summary>
+        /// rfvClave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvClave;
+
+        /// <summary>
         /// txtReContrasenia control.
         /// </summary>
         /// <remarks>
@@ -94,6 +103,24 @@ namespace TP3Progra3
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtReContrasenia;
+
+        /// <summary>
+        /// cvClave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvClave;
+
+        /// <summary>
+        /// rfvReClave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvReClave;
 
         /// <summary>
         /// txtCorreoElectronico control.
@@ -132,6 +159,15 @@ namespace TP3Progra3
         protected global::System.Web.UI.WebControls.DropDownList DropdownListLocalidades;
 
         /// <summary>
+        /// lblMsjClave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMsjClave;
+
+        /// <summary>
         /// btnInicio control.
         /// </summary>
         /// <remarks>
@@ -148,5 +184,14 @@ namespace TP3Progra3
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnGuardarUsuario;
+
+        /// <summary>
+        /// ValidationSummary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary;
     }
 }

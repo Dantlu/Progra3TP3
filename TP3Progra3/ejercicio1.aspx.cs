@@ -14,6 +14,8 @@ namespace TP3Progra3
         {
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
             lblErrorLocalidad.Visible = false;
+            txtContrasenia.Attributes["type"] = "password";
+            txtReContrasenia.Attributes["type"] = "password";
         }
 
         protected void btnInicio_Click(object sender, EventArgs e)
