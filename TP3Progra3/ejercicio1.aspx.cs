@@ -16,6 +16,7 @@ namespace TP3Progra3
             lblErrorLocalidad.Visible = false;
             txtContrasenia.Attributes["type"] = "password";
             txtReContrasenia.Attributes["type"] = "password";
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
         }
 
         protected void btnInicio_Click(object sender, EventArgs e)
@@ -55,6 +56,45 @@ namespace TP3Progra3
                 // Por ejemplo, mostrar un mensaje de error adicional
             }
 
+        }
+
+        protected void cvCp_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            if(args.Value.Length==4)
+            {
+                args.IsValid = true;
+            }
+            else
+            {
+                args.IsValid = false;
+            }
+        }
+
+        protected void cvCP_ServerValidate1(object source, ServerValidateEventArgs args)
+        {
+            if (args.Value.Length == 4)
+            {
+                args.IsValid = true;
+            }
+            else
+            {
+                args.IsValid = false;
+            }
+        }
+
+        protected void cvCorreo_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+
+         
+                if (args.Value.Length == 4)
+                {
+                    args.IsValid = true;
+                }
+                else
+                {
+                    args.IsValid = false;
+                }
+            
         }
     }
 }
