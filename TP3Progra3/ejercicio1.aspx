@@ -24,10 +24,21 @@
         }
         .auto-style6 {
             height: 33px;
-            width: 167px;
+            width: 169px;
         }
         .auto-style7 {
-            width: 167px;
+            width: 169px;
+        }
+        .auto-style8 {
+            width: 164px;
+            height: 49px;
+        }
+        .auto-style9 {
+            width: 169px;
+            height: 49px;
+        }
+        .auto-style10 {
+            height: 49px;
         }
     </style>
 </head>
@@ -62,17 +73,19 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style5">&nbsp;</td>
-                  <td class="auto-style7"><strong>Usuarios<br />
+                    <td class="auto-style8"></td>
+                  <td class="auto-style9"><strong>Usuarios<br />
                       </strong></td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style10"></td>
                 </tr>
                 <tr>
                     <td class="auto-style5">Nombre usuario:</td>
                     <td class="auto-style7">
                         <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvUsuario" runat="server" ControlToValidate="txtUsuario" ErrorMessage="El campo no pueder permanecer en blanco" ValidationGroup="grupo2">*</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style5">Contraseña:</td>
@@ -101,6 +114,8 @@
                     </td>
                     <td>
                         <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="txtCorreoElectronico" ErrorMessage="Debe ser un correo valido" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="grupo2">*</asp:RegularExpressionValidator>
+                    &nbsp;
+                        <asp:RequiredFieldValidator ID="rfvCorreo" runat="server" ControlToValidate="txtCorreoElectronico" ErrorMessage="El campo no pueder permanecer en blanco" ValidationGroup="grupo2">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -110,13 +125,16 @@
                     </td>
                     <td class="auto-style2">
                         <asp:RegularExpressionValidator ID="revCp" runat="server" ControlToValidate="txtCp" ErrorMessage="Solo se admiten numeros" ValidationExpression="^\d+$" ValidationGroup="grupo2">*</asp:RegularExpressionValidator>
+                    &nbsp;<asp:RequiredFieldValidator ID="rfvCP" runat="server" ControlToValidate="txtCp" ErrorMessage="El campo no pueder permanecer en blanco" ValidationGroup="grupo2">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style5"><asp:Label ID="txtLocalidades" runat="server" Text="Localidades:"></asp:Label></td>
                     <td class="auto-style7">
                         <asp:DropDownList ID="DropdownListLocalidades" runat="server" Width="115px"></asp:DropDownList>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtCorreoElectronico" ErrorMessage="El campo no pueder permanecer en blanco" ValidationGroup="grupo2">*</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style5">
@@ -130,6 +148,14 @@
                         <asp:Button ID="btnInicio" runat="server" Text="Ir a inicio.aspx" OnClick="btnInicio_Click" />
                     </td>
                     <td class="auto-style7">&nbsp;<asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" OnClick="btnGuardarUsuario_Click" ValidationGroup="grupo2"></asp:Button></td>
+                    <td>&nbsp;
+                        <asp:Label ID="lblBienvenido" runat="server" Font-Bold="True"></asp:Label>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style5">
+                        &nbsp;</td>
+                    <td class="auto-style7">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
             </table>

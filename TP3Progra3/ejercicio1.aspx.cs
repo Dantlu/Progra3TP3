@@ -24,13 +24,11 @@ namespace TP3Progra3
             Response.Redirect("Inicio.aspx");
         }
 
-        protected void btnGuardarUsuario_Click(object sender, EventArgs e)
-        {
-        }
+        
 
         protected void btnLocalidad_Click(object sender, EventArgs e)
         {           
-            // Verificar si la validación es exitosa
+            
             if (Page.IsValid)
             {
                 // Acciones a realizar si la validación es exitosa
@@ -58,43 +56,35 @@ namespace TP3Progra3
 
         }
 
+
+
         protected void cvCp_ServerValidate(object source, ServerValidateEventArgs args)
         {
-            if(args.Value.Length==4)
-            {
-                args.IsValid = true;
-            }
-            else
-            {
-                args.IsValid = false;
-            }
+          
+            args.IsValid = args.Value.Length == 4 && args.Value.All(char.IsDigit);
         }
-
-        protected void cvCP_ServerValidate1(object source, ServerValidateEventArgs args)
+        protected void btnGuardarUsuario_Click(object sender, EventArgs e)
         {
-            if (args.Value.Length == 4)
-            {
-                args.IsValid = true;
-            }
-            else
-            {
-                args.IsValid = false;
-            }
-        }
-
-        protected void cvCorreo_ServerValidate(object source, ServerValidateEventArgs args)
-        {
-
-         
-                if (args.Value.Length == 4)
-                {
-                    args.IsValid = true;
-                }
-                else
-                {
-                    args.IsValid = false;
-                }
             
+            if (Page.IsValid && TodosLosCamposCompletos())
+            {
+                string nombreUsuario = txtUsuario.Text.Trim();
+                lblBienvenido.Text = $"Bienvenido {nombreUsuario}";
+            }
+           
         }
+
+        private bool TodosLosCamposCompletos()
+        {
+           
+            return !string.IsNullOrEmpty(txtUsuario.Text.Trim()) &&
+                   !string.IsNullOrEmpty(txtContrasenia.Text.Trim()) &&
+                   !string.IsNullOrEmpty(txtReContrasenia.Text.Trim()) &&
+                   !string.IsNullOrEmpty(txtCorreoElectronico.Text.Trim()) &&
+                   !string.IsNullOrEmpty(txtCp.Text.Trim()) &&
+                   DropdownListLocalidades.SelectedItem != null;
+        }
+
+       
     }
 }
