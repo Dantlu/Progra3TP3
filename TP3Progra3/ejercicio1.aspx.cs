@@ -84,7 +84,5 @@ namespace TP3Progra3
                    !string.IsNullOrEmpty(txtCp.Text.Trim()) &&
                    DropdownListLocalidades.SelectedItem != null;
         }
-
-       
     }
 }

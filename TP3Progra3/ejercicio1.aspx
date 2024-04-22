@@ -126,6 +126,7 @@
                     <td class="auto-style2">
                         <asp:RegularExpressionValidator ID="revCp" runat="server" ControlToValidate="txtCp" ErrorMessage="Solo se admiten numeros" ValidationExpression="^\d+$" ValidationGroup="grupo2">*</asp:RegularExpressionValidator>
                     &nbsp;<asp:RequiredFieldValidator ID="rfvCP" runat="server" ControlToValidate="txtCp" ErrorMessage="El campo no pueder permanecer en blanco" ValidationGroup="grupo2">*</asp:RequiredFieldValidator>
+                    &nbsp;<asp:RegularExpressionValidator ID="reexvaCP" runat="server" ControlToValidate="txtCp" ErrorMessage="Ingrese un número de 4 dígitos" ValidationExpression="^.{4}$" ValidationGroup="grupo2">*</asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>
